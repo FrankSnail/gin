@@ -65,13 +65,6 @@ func (trees methodTrees) get(method string) *node {
 	return nil
 }
 
-func min(a, b int) int {
-	if a <= b {
-		return a
-	}
-	return b
-}
-
 func longestCommonPrefix(a, b string) int {
 	i := 0
 	max := min(len(a), len(b))
